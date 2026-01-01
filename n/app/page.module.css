@@ -1,0 +1,33 @@
+.sliderWrapper {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slideImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: fade 9s infinite;
+}
+
+.fade1 {
+  animation-delay: 0s;
+}
+
+.fade2 {
+  animation-delay: 3s;
+}
+
+.fade3 {
+  animation-delay: 6s;
+}
+
+@keyframes fade {
+  0%, 100% { opacity: 0; }
+  10%, 90% { opacity: 1; }
+}
